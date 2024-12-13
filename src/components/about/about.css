@@ -1,0 +1,17 @@
+.about_container{
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.about_data{
+    padding: 1.875rem;
+    background-color: #fff;
+}
+
+.about_img{
+    width: 100px;
+    height: 100px;
+}
+.section-titel{
+    color: var(--Title-color);
+}
