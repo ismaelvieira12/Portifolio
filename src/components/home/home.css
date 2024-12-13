@@ -73,7 +73,6 @@
                 }
             }
         }
-        }
     }
 
     & .shapes{
@@ -169,15 +168,15 @@
 
 @keyframes ani-mouse {
     0%{
-        bottom: 50%;
+        top: 29%;
     }
     15%{
-        bottom: 4px;
+        top: 50%;
     }
     50%{
         top: 50%;
     }
     100%{
-        top: 4px;
+        top: 29%;
     }
-}
+}   
