@@ -1,5 +1,6 @@
 import React from 'react';
 import "../about/about.css";
+import AboutBox from './AboutBox';
 import imagem from "../../assets/about.png"
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
               <div className="about_skills grid">
                 <div className="skills_data">
                   <div className="skills_title">
-                    <h3 className="skills_names">Desenvolvedor</h3>
+                    <h3 className="skills_names">HTML Semântico</h3>
                     <span className="skills_number">90%</span>
                   </div>
 
@@ -30,7 +31,7 @@ const About = () => {
                 <div className="skills_data">
                   <div className="skills_title">
                     <h3 className="skills_names">Design</h3>
-                    <span className="skills_number">70%</span>
+                    <span className="skills_number">75%</span>
                   </div>
 
                   <div className="skills_bar">
@@ -40,18 +41,20 @@ const About = () => {
 
                 <div className="skills_data">
                   <div className="skills_title">
-                    <h3 className="skills_names">Photography</h3>
-                    <span className="skills_number">60%</span>
+                    <h3 className="skills_names">Scripts</h3>
+                    <span className="skills_number">50%</span>
                   </div>
 
                   <div className="skills_bar">
-                    <span className="skills_percetage protography"></span>
+                    <span className="skills_percetage script"></span>
                   </div>
                 </div>
               </div>
             
           </div>
       </div>
+
+      <AboutBox />
     </section>
   )
 }

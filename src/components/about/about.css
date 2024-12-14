@@ -60,16 +60,16 @@
             display: block;
         }
         & .development{
-            background-image:linear-gradient(to right, rgb(1, 168, 1), rgb(71, 251, 71));
+            background-image:linear-gradient(to right, rgb(233, 233, 0), rgb(253, 253, 70));
             width: 89%;
         }
         & .ui_design{
             background-image:linear-gradient(to right, #4aa1af, #22e1ff);
-            width: 70%;
+            width: 76%;
         }
-        & .protography{
+        & .script{
             background-image:linear-gradient(to right, #ff7a4e, #fdb7a0);
-            width: 60%;
+            width: 50%;
         }
 
     }
