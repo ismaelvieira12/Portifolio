@@ -10,11 +10,10 @@ const About = () => {
           <img src={imagem} alt="testando"  className='about_img'/>
 
           <div className="about_data grid">
-            <div className="about_data_infor">
-              <p className="about_description">Sou dedicado e disciplinado com uma paixão pela programação. Tenho experiência básica em HTML5, CSS3, JAVASCRIPT e MySQL. Estou constantemente em busca de inovações e me sinto motivado em resolver problemas complexos através da tecnologia.
-              Tenho capacidade de aprender rapidamente novos conceitos e tecnologias. Trabalhar em equipe é algo que valorizo, pois acredito que a colaboração é essencial para o sucesso de qualquer projeto. Sou detalhista e organizado.</p>
+            <div className="about_infor">
+              <p className="about_description">Sou dedicado e disciplinado com uma paixão pela programação. Tenho experiência básica em HTML5, CSS3, JAVASCRIPT e MySQL. Estou constantemente em busca de inovações e me sinto motivado em resolver problemas complexos através da tecnologia.</p>
               <a href="#" className='btn'>Download CV</a>
-
+            </div>
 
               <div className="about_skills grid">
                 <div className="skills_data">
@@ -50,7 +49,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
       </div>
     </section>
