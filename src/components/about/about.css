@@ -5,12 +5,14 @@
 
 .about_data{
     padding: 1.875rem;
-    background-color: #fff;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
 }
 
 .about_img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 15  0px;
 }
 .section-titel{
     color: var(--Title-color);

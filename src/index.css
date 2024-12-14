@@ -8,7 +8,7 @@
   --Second-color:#FF4000;
   --Title-color: #3b3b3b;
   --text-color:#201E1F;
-  --body-color:#faf9f9;
+  --body-color:#f8f8f8;
   --container-color: #ffffff;
 
   /*============== Fonts & Typography =================== */
@@ -104,7 +104,7 @@ img{
 }
 
 .section{
-  padding: 7rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
 }
 
