@@ -8,7 +8,7 @@
   --Second-color:#FF4000;
   --Title-color: #3b3b3b;
   --text-color:#201E1F;
-  --body-color:#FEEFDD;
+  --body-color:#faf9f9;
   --container-color: #ffffff;
 
   /*============== Fonts & Typography =================== */
@@ -62,7 +62,7 @@ body,input,button,textarea {
 }
 
 body{
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -110,7 +110,7 @@ img{
 
 .section-titel{
   font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
+  /* margin-left: 0.875rem; */
   font-weight: var(--font-bold);
   position: relative;
   margin-bottom: 3.75rem;
