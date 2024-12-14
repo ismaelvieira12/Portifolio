@@ -63,6 +63,14 @@
             background-image:linear-gradient(to right, rgb(1, 168, 1), rgb(71, 251, 71));
             width: 89%;
         }
+        & .ui_design{
+            background-image:linear-gradient(to right, rgb(1, 168, 1), rgb(71, 251, 71));
+            width: 89%;
+        }
+        & .protography{
+            background-image:linear-gradient(to right, rgb(1, 168, 1), rgb(71, 251, 71));
+            width: 89%;
+        }
 
     }
 }
