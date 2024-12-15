@@ -76,8 +76,8 @@
 }
 .about_boxes{
     display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
+    justify-content: space-between;
+    margin-top: 3rem;
     text-align: justify;
     & .about_box{
         display: flex;
