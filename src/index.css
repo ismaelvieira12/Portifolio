@@ -110,7 +110,7 @@ img{
 
 .section-titel{
   font-size: var(--h1-font-size);
-  /* margin-left: 0.875rem; */
+  margin-left: 0.875rem;
   font-weight: var(--font-bold);
   position: relative;
   margin-bottom: 3.75rem;

@@ -1,3 +1,11 @@
 .section_title{
-    color: aqua;
+    font-size: var(--h1-font-size);
+}
+
+.services_container{
+    grid-template-columns: repeat(3, 1fr);
+} 
+.services_img{
+    height: 100px;
+    width: 100px;
 }
