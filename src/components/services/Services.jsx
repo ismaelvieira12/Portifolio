@@ -27,7 +27,7 @@ const data = [
 const Services = () => {
   return (
    <section className="section services container" id="services">
-      <h2 className="section-titel">Services</h2>
+      <h2 className="section-titel">Serviços</h2>
 
       {/* chamdo o arry de objetos criado la em cima (data) */}
       <div className="services_container grid">
