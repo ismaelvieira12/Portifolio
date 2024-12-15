@@ -1,8 +1,8 @@
 import React from 'react';
 import "../services/services.css";
-import imagem1 from "../../assets/about.png";
-import imagem2 from "../../assets/about.png";
-import imagem3 from "../../assets/about.png";
+import imagem1 from "../../assets/imagem1.svg";
+import imagem2 from "../../assets/imagem2.png";
+import imagem3 from "../../assets/imagem3.png";
 
 const data = [
   {
@@ -20,8 +20,8 @@ const data = [
   {
     id: 3,
     image: imagem3,
-    title: "Tecnologia",
-    description: "Testando"
+    title: "Data Base",
+    description: "MySql, MongoDB"
   },
 ]
 const Services = () => {
