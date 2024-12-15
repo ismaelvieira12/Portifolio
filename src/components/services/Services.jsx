@@ -8,7 +8,7 @@ const data = [
   {
     id: 1,
     image: imagem1,
-    title: "UI/UX design",
+    title: "UI/UX Design",
     description: "Desenvolvedor com foco na experiência do usuário"
   },
   {

@@ -30,7 +30,7 @@ const About = () => {
 
                 <div className="skills_data">
                   <div className="skills_title">
-                    <h3 className="skills_names">Design</h3>
+                    <h3 className="skills_names">UI/UX Design</h3>
                     <span className="skills_number">75%</span>
                   </div>
 
