@@ -14,7 +14,7 @@ function App() {
     <>
       <Sadbar />
     <main className='main'>
-      
+      {/*home*/}
       <Home />
       <About />
       <Services />
