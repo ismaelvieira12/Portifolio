@@ -6,4 +6,28 @@
 
 .timeline{
     background-color: var(--container-color);
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.timeline_item{
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &:last-child{
+        padding-bottom: 0;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: var(--Second-color);
+        left: 0.25rem;
+        top: 0;
+    }
 }
