@@ -3,7 +3,9 @@ import "../resume/resume.css";
 
 const Resume = () => {
   return (
-    <div className='teste'>testando pasta 3</div>
+    <div className="container section resume" id="resume">
+      
+    </div>
   )
 }
 
