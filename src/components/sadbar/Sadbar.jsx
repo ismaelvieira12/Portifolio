@@ -22,13 +22,13 @@ const Sadbar = () => {
             <li className="nav_item">
               <a href="#services" className="nav_link"><i className="icon-briefcase"></i></a>
             </li>
-            
-            <li className="nav_item">
-              <a href="#portifolio" className="nav_link"><i className="icon-layers"></i></a>
-            </li>
 
             <li className="nav_item">
               <a href="#resume" className="nav_link"><i className='icon-graduation'></i></a>
+            </li>
+            
+            <li className="nav_item">
+              <a href="#portifolio" className="nav_link"><i className="icon-layers"></i></a>
             </li>
 
             <li className="nav_item">
