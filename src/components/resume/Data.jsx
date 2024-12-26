@@ -1,30 +1,29 @@
 const Data = [
     {
-        charge_id: null,
-        charge_type: null,
-        company_id: 5049,
-        contract_id: 1096806,
-        created_at: "2024-06-03T14:51:51.000000Z",
-        custom_id: "725123361",
-        customer: {
-            id: 1089437,
-            name: "Elaine Steffane Rodrigues"
-            phone:{
-                
-            } 
-            id
-            : 
-            1022254
-            number
-            : 
-            "(85) 9 9701-6256"
-            number_only
-            : 
-            "85997016256"
-            phone_id
-            : 
-            1089437
-        }
+        id: 1,
+        category: "educação",
+        icon: "icon-graduation",
+        year: 2022-2022,
+        title: "HTML5 e CSS3",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
+ 
+    },
+    {
+        id: 2,
+        category: "educação",
+        icon: "icon-graduation",
+        year: 2022-2023,
+        title: "JavaScript - Basico",
+        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
+ 
+    },
+    {
+        id: 3,
+        category: "educação",
+        icon: "icon-graduation",
+        year: 2023-2024,
+        title: "JavaScript - Intermediário",
+        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
  
     }
 ]
