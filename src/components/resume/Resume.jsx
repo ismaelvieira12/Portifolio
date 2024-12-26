@@ -20,10 +20,10 @@ const Resume = () => {
         </div>
 
         <div className="timeline grid">
-          {Data.map((val, id) => {
+          {Data.map((val, index) => {
             if (val.category === "experiência") {
               return (
-                <Card />
+                <Card key={index} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
               )
             }
           })}
