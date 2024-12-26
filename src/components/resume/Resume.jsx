@@ -3,6 +3,7 @@ import "../resume/resume.css";
 import Data from './Data';
 import Card from './Card';
 
+
 const Resume = () => {
   return (
     <section className="container section resume" id="resume">
