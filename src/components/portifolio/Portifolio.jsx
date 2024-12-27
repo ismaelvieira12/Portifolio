@@ -11,7 +11,7 @@ const Portifolio = () => {
         <div className="work_itens">Jogo da Velha</div>
         <div className="work_itens">Gerador de Senha</div>
         <div className="work_itens">Dashboard</div>
-        <div className="work_itens"></div>
+        <div className="work_itens">Projeto com bootstrap</div>
       </div>
     </div>
   )
