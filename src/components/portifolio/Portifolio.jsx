@@ -3,7 +3,17 @@ import "../portifolio/portifolio.css"
 
 const Portifolio = () => {
   return (
-    <div className='#'>Testando pasta 5</div>
+    <div className="container work section" id="work">
+      <h2 className="container-title">Projetos Recentes</h2>
+
+      <div className="work_filters">
+        <div className="work_itens">Relógio</div>
+        <div className="work_itens">Jogo da Velha</div>
+        <div className="work_itens">Gerador de Senha</div>
+        <div className="work_itens">Dashboard</div>
+        <div className="work_itens"></div>
+      </div>
+    </div>
   )
 }
 
