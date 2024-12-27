@@ -1,5 +1,6 @@
 import React from 'react';
 import "../portifolio/portifolio.css"
+import Menu from './Menu';
 
 const Portifolio = () => {
   return (
@@ -14,7 +15,9 @@ const Portifolio = () => {
         <div className="work_itens">Projeto com bootstrap</div>
       </div>
 
-      <div className="container grid"></div>
+      <div className="container grid">
+        <Menu/>
+      </div>
     </div>
   )
 }
