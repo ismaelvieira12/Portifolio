@@ -8,11 +8,13 @@ import 'swiper/element/bundle';
 // importando o swiper para o carrossel
 import {} from 'swiper/element/bundle'
 // importando o css que vai ser usado no carrossel
-import './swiper.css';
 // importando os modulos que serão usados no carrossel
+// Swiper
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
