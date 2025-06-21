@@ -1,6 +1,6 @@
 import React from 'react';
 import "../portifolio/portifolio.css"
-import Menu from './Menu';
+// import Menu from './Menu';
 
 const Portifolio = () => {
   return (
@@ -16,7 +16,7 @@ const Portifolio = () => {
       </div>
 
       <div className="container grid">
-        <Menu/>
+        {/* <Menu/> */}
       </div>
     </div>
   )
