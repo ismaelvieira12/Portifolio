@@ -1,6 +1,17 @@
 import React from 'react';
 import "../portifolio/portifolio.css"
-import Menu from './Menu';
+
+// importando o swiper para o carrossel
+import 'swiper/element/bundle';
+// importando o swiper para o carrossel
+import {} from 'swiper/element/bundle'
+// importando o css que vai ser usado no carrossel
+import './swiper.css';
+// importando os modulos que serão usados no carrossel
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+// import Menu from './Menu';
 
 const Portifolio = () => {
   return (
@@ -16,7 +27,7 @@ const Portifolio = () => {
       </div>
 
       <div className="container grid">
-        <Menu/>
+        {/* <Menu/> */}
       </div>
     </section>
   )
