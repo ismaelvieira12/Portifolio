@@ -10,13 +10,13 @@ const Portifolio = () => {
   const data = [
     {
       id: 1,
-      image: 'public/project/banco-de-horas.jpg',
+      image: "public/project/dashboard.png",
       // title: "Relógio Digital",
       // description: "Um relógio digital simples feito com React."
     },
     {
       id: 2,
-      image: "public/project/dashboard.png",
+      image: 'public/project/banco-de-horas.jpg',
       // title: "Jogo da Velha",
       // description: "Um jogo da velha interativo."
     },
@@ -54,7 +54,7 @@ const Portifolio = () => {
   ]
   return (
 
-    <section className="container work section" id="work">
+    <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
       {/* <div className="work_filters">
