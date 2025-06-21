@@ -10,44 +10,44 @@ const Portifolio = () => {
   const data = [
     {
       id: 1,
-      image: '/project/relógio-digital.png',
+      image: 'public/project/banco-de-horas.jpg',
       // title: "Relógio Digital",
       // description: "Um relógio digital simples feito com React."
     },
     {
       id: 2,
-      image: "/project/jogo-da-velha.png",
+      image: "public/project/dashboard.png",
       // title: "Jogo da Velha",
       // description: "Um jogo da velha interativo."
     },
     {
       id: 3,
-      image: "/project/gerador-de-senha.jpg",
+      image: "public/project/dashboard2.jpg",
       // title: "Gerador de Senha",
       // description: "Um gerador de senhas seguras."
     },
     {
       id: 4,
-      image: "/project/dashboard.png",
+      image: "public/project/gerador-de-senha.jpg",
       // title: "Dashboard",
       // description: "Um dashboard para visualização de dados."
     },
     {
       id: 5,
-      image: "/project/projeto-com-bootstrap.jpg",
+      image: "public/project/jogo-da-velha.png",
       // title: "Projeto com Bootstrap",
       // description: "Um projeto responsivo usando Bootstrap."
     },
     {
       id: 6,
-      image: "/project/dashboard2.jpg",
+      image: "public/project/projeto-com-bootstrap.jpg",
       // title: "Projeto com Bootstrap",
       // description: "Um projeto responsivo usando Bootstrap."
     }
     ,
     {
       id: 6,
-      image: "/project/banco-de-horas.jpg",
+      image: "public/project/relógio-digital.png",
       // title: "Projeto com Bootstrap",
       // description: "Um projeto responsivo usando Bootstrap."
     }
@@ -55,7 +55,7 @@ const Portifolio = () => {
   return (
 
     <section className="container work section" id="work">
-      <h2 className="container-title">Projetos Recentes</h2>
+      <h2 className="section_title">Projetos Recentes</h2>
 
       {/* <div className="work_filters">
         <span className="work_itens">Relógio</span>
@@ -65,8 +65,8 @@ const Portifolio = () => {
         <span className="work_itens">Projeto com bootstrap</span>
       </div> */}
 
-      <div className="container grid">
-        <Swiper slidesPerView={1} pagination={{ clickable: true }} navigation>
+      <div className="carrosel">
+        <Swiper slidesPerView={1} pagination={{ clickable: true}} navigation>
           {data.map((item) => (
             <SwiperSlide key={item.id}>
               <img src={item.image} alt="Slider" className='slider-item' />
