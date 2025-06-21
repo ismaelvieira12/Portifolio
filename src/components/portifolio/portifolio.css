@@ -3,10 +3,10 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .slider-item {
-    width: 100%;
+}
+
+.slider-item {
+    width: 50%;
     height: 500px;
     object-fit: contain; /* ou 'cover' dependendo do efeito que quiser */
     display: block;
