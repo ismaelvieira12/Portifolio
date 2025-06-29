@@ -66,13 +66,13 @@ const Portifolio = () => {
       </div> */}
 
       <div className="carrosel">
-        <Swiper slidesPerView={1} pagination={{ clickable: true}} navigation>
-          {data.map((item) => (
-            <SwiperSlide key={item.id}>
-              <img src={item.image} alt="Slider" className='slider-item' />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      
+        {data.map((item) => (
+          <div key={item.id}>
+            <img src={item.image} alt="Slider" className='slider-item' />
+          </div>
+        ))}
+      
       </div>
     </section>
   )
