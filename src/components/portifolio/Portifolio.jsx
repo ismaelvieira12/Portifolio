@@ -66,13 +66,11 @@ const Portifolio = () => {
       </div> */}
 
       <div className="carrosel">
-      
         {data.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className='cards'>
             <img src={item.image} alt="Slider" className='slider-item' />
           </div>
         ))}
-      
       </div>
     </section>
   )

@@ -1,19 +1,19 @@
 
 .carrosel {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  background-color: aqua;
 }
 
 .slider-item {
-    width: 50%;
-    height: 500px;
-    object-fit: contain; /* ou 'cover' dependendo do efeito que quiser */
-    display: block;
-    margin: 0 auto;
-  }
+  /* width: 300px;
+  height: 500px;
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto; */
+}
   
-  .section_title{
-    margin-bottom: 3rem;
-  }
+.section_title{
+  margin-bottom: 3rem;
+}
     
