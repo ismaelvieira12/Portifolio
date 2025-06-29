@@ -11,44 +11,44 @@ const Portifolio = () => {
     {
       id: 1,
       image: "public/project/dashboard.png",
-      // title: "Relógio Digital",
+      title: "Dashboard",
       // description: "Um relógio digital simples feito com React."
     },
     {
       id: 2,
       image: 'public/project/banco-de-horas.jpg',
-      // title: "Jogo da Velha",
+      title: "Banco de Horas Extras",
       // description: "Um jogo da velha interativo."
     },
     {
       id: 3,
       image: "public/project/dashboard2.jpg",
-      // title: "Gerador de Senha",
+      title: "Dashboard",
       // description: "Um gerador de senhas seguras."
     },
     {
       id: 4,
       image: "public/project/gerador-de-senha.jpg",
-      // title: "Dashboard",
+      title: "Gerador de Senhas",
       // description: "Um dashboard para visualização de dados."
     },
     {
       id: 5,
       image: "public/project/jogo-da-velha.png",
-      // title: "Projeto com Bootstrap",
+      title: "Jogo da Velha",
       // description: "Um projeto responsivo usando Bootstrap."
     },
     {
       id: 6,
       image: "public/project/projeto-com-bootstrap.jpg",
-      // title: "Projeto com Bootstrap",
+      title: "Site para uma padaria",
       // description: "Um projeto responsivo usando Bootstrap."
     }
     ,
     {
       id: 6,
       image: "public/project/relógio-digital.png",
-      // title: "Projeto com Bootstrap",
+      title: "Relógio com Cronometro",
       // description: "Um projeto responsivo usando Bootstrap."
     }
   ]
@@ -57,18 +57,11 @@ const Portifolio = () => {
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
-      {/* <div className="work_filters">
-        <span className="work_itens">Relógio</span>
-        <span className="work_itens">Jogo da Velha</span>
-        <span className="work_itens">Gerador de Senha</span>
-        <span className="work_itens">Dashboard</span>
-        <span className="work_itens">Projeto com bootstrap</span>
-      </div> */}
-
       <div className="carrosel">
         {data.map((item) => (
           <div key={item.id} className='cards'>
             <img src={item.image} alt="Slider" className='slider-item' />
+            <p >{item.title}</p>
           </div>
         ))}
       </div>
