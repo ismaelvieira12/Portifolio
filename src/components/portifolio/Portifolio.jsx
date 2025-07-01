@@ -57,8 +57,7 @@ const Portifolio = () => {
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
-      <div className="carrosel" 
-        motion.div
+      <motion.div
         initial={{ opacity: 0, y: 50, blur: 10, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, blur: 0, scale: 1 }}
         transition={{
@@ -70,15 +69,15 @@ const Portifolio = () => {
           backdropFilter: "blur(10px)",
           WebkitBackdropFilter: "blur(10px)", // Safari support
         }}
-        className="bg-white/10 p-10 rounded-2xl shadow-xl text-white text-2xl font-semibold"
-      >
+        className="carrosel">
+
         {data.map((item) => (
           <div key={item.id} className='cards'>
             <img src={item.image} alt="Slider" className='slider-item' />
             <p >{item.title}</p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }
