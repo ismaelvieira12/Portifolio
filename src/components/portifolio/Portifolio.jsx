@@ -1,7 +1,7 @@
 import React from 'react';
 import "../portifolio/portifolio.css"
 
-
+import { motion } from "framer-motion";
 
 import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
@@ -57,7 +57,21 @@ const Portifolio = () => {
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
-      <div className="carrosel">
+      <div className="carrosel" 
+        motion.div
+        initial={{ opacity: 0, y: 50, blur: 10, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, blur: 0, scale: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+          delay: 0.2,
+        }}
+        style={{
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)", // Safari support
+        }}
+        className="bg-white/10 p-10 rounded-2xl shadow-xl text-white text-2xl font-semibold"
+      >
         {data.map((item) => (
           <div key={item.id} className='cards'>
             <img src={item.image} alt="Slider" className='slider-item' />
