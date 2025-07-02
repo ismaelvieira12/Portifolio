@@ -5,7 +5,7 @@
 }
 
 .timeline{
-    background-color: var(--container-color);
+    /* background-color: var(--container-color); */
     padding: 1.875rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
