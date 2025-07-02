@@ -62,8 +62,7 @@ body,input,button,textarea {
 }
 
 body{
-  /* background-color: var(--body-color); */
-  background-color: #0D1117;
+  background-color: var(--body-color);
   line-height: 1.7;
   color: var(--text-color);
 }
