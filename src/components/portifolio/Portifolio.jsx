@@ -58,8 +58,8 @@ const Portifolio = () => {
       <h2 className="section_title">Projetos Recentes</h2>
 
       <motion.div
-        initial={{ opacity: 0, y: -50, blur: -10, scale: 0.95 }}
-        animate={{ opacity: 1, y: 0, blur: 0, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 1,
           ease: "easeOut",
