@@ -11,45 +11,45 @@ const Portifolio = () => {
     {
       id: 1,
       image: "public/project/dashboard.png",
-      // title: "Dashboard",
-      // description: "Um relógio digital simples feito com React."
+      title: "Dashboard",
+      description: "Um relógio digital simples feito com React."
     },
     {
       id: 2,
       image: 'public/project/banco-de-horas.jpg',
-      // title: "Banco de Horas Extras",
-      // description: "Um jogo da velha interativo."
+      title: "Banco de Horas Extras",
+      description: "Um jogo da velha interativo."
     },
     {
       id: 3,
       image: "public/project/dashboard2.jpg",
-      // title: "Dashboard",
-      // description: "Um gerador de senhas seguras."
+      title: "Dashboard",
+      description: "Um gerador de senhas seguras."
     },
     {
       id: 4,
       image: "public/project/gerador-de-senha.jpg",
-      // title: "Gerador de Senhas",
-      // description: "Um dashboard para visualização de dados."
+      title: "Gerador de Senhas",
+      description: "Um dashboard para visualização de dados."
     },
     {
       id: 5,
       image: "public/project/jogo-da-velha.png",
-      // title: "Jogo da Velha",
-      // description: "Um projeto responsivo usando Bootstrap."
+      title: "Jogo da Velha",
+      description: "Um projeto responsivo usando Bootstrap."
     },
     {
       id: 6,
       image: "public/project/projeto-com-bootstrap.jpg",
-      // title: "Site para uma padaria",
-      // description: "Um projeto responsivo usando Bootstrap."
+      title: "Site para uma padaria",
+      description: "Um projeto responsivo usando Bootstrap."
     }
     ,
     {
       id: 6,
       image: "public/project/relógio-digital.png",
-      // title: "Relógio com Cronometro",
-      // description: "Um projeto responsivo usando Bootstrap."
+      title: "Relógio com Cronometro",
+      description: "Um projeto responsivo usando Bootstrap."
     }
   ]
   return (
@@ -74,7 +74,8 @@ const Portifolio = () => {
         {data.map((item) => (
           <div key={item.id} className='cards'>
             <img src={item.image} alt="Slider" className='slider-item' />
-            <p >{item.title}</p>
+            <p className='title'>{item.title}</p>
+            <span>{item.description}</span>
           </div>
         ))}
       </motion.div>
