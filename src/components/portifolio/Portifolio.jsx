@@ -58,7 +58,7 @@ const Portifolio = () => {
       <h2 className="section_title">Projetos Recentes</h2>
 
       <motion.div
-        initial={{ opacity: 0, y: 50, blur: 10, scale: 0.95 }}
+        initial={{ opacity: 0, y: -50, blur: -10, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, blur: 0, scale: 1 }}
         transition={{
           duration: 1,
@@ -73,9 +73,11 @@ const Portifolio = () => {
 
         {data.map((item) => (
           <div key={item.id} className='cards'>
-            <img src={item.image} alt="Slider" className='slider-item' />
+            <div className='slider-item-container'>
+              <img src={item.image} alt="Slider" className='slider-item' />
+            </div>
             <p className='title'>{item.title}</p>
-            <span>{item.description}</span>
+            <span className='descrition'>{item.description}</span>
           </div>
         ))}
       </motion.div>
