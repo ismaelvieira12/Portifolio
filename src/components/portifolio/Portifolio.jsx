@@ -6,7 +6,12 @@ import { motion } from "framer-motion";
 import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
 
+
 const Portifolio = () => {
+  
+  function add() {
+    const element = document.getElementById("portifolio");
+  }
   const data = [
     {
       id: 1,
@@ -53,6 +58,8 @@ const Portifolio = () => {
     }
   ]
   
+  
+
   return (
 
     <section className="container work section" id="portifolio">
