@@ -8,10 +8,6 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 
 
 const Portifolio = () => {
-  
-  function add() {
-    const element = document.getElementById("portifolio");
-  }
   const data = [
     {
       id: 1,
@@ -57,11 +53,14 @@ const Portifolio = () => {
       description: "Um projeto responsivo usando Bootstrap."
     }
   ]
+  let cardsElement = document.querySelectorAll('.cards');
+  cardsElement.EddeventList('mouseover', () =>{
+    console.log('Mouse over on card');
+  }
+  );
   
-  
-
   return (
-
+    
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
@@ -81,7 +80,7 @@ const Portifolio = () => {
 
         {data.map((item) => (
           <div key={item.id} className='cards'>
-            <div className='slider-item-container'>
+            <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
             </div>
             <p className='title'>{item.title}</p>
