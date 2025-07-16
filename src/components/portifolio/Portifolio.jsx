@@ -53,11 +53,11 @@ function Portifolio() {
       description: "Um projeto responsivo usando Bootstrap."
     }
   ];
-  let cardsElement = document.querySelectorAll('.cards');
-  cardsElement.addEventListener('mouseover', () => {
-    console.log('Mouse over on card');
-  }
-  );
+  // let cardsElement = document.querySelectorAll('.cards');
+  // cardsElement.addEventListener('mouseover', () => {
+  //   console.log('Mouse over on card');
+  // }
+  // );
 
   return (
 
