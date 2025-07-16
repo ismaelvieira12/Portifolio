@@ -54,7 +54,7 @@ function Portifolio() {
     }
   ];
   let cardsElement = document.querySelectorAll('.cards');
-  cardsElement.EddeventList('mouseover', () => {
+  cardsElement.addEventListener('mouseover', () => {
     console.log('Mouse over on card');
   }
   );
