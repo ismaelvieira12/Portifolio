@@ -7,7 +7,7 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
 
 
-const Portifolio = () => {
+function Portifolio() {
   const data = [
     {
       id: 1,
@@ -44,23 +44,23 @@ const Portifolio = () => {
       image: "public/project/projeto-com-bootstrap.jpg",
       title: "Site para uma padaria",
       description: "Um projeto responsivo usando Bootstrap."
-    }
-    ,
+    },
+
     {
       id: 6,
       image: "public/project/relógio-digital.png",
       title: "Relógio com Cronometro",
       description: "Um projeto responsivo usando Bootstrap."
     }
-  ]
+  ];
   let cardsElement = document.querySelectorAll('.cards');
-  cardsElement.EddeventList('mouseover', () =>{
+  cardsElement.EddeventList('mouseover', () => {
     console.log('Mouse over on card');
   }
   );
-  
+
   return (
-    
+
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos Recentes</h2>
 
@@ -89,7 +89,7 @@ const Portifolio = () => {
         ))}
       </motion.div>
     </section>
-  )
+  );
 }
 
 export default Portifolio
