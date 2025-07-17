@@ -3,22 +3,10 @@
 }
 
 .services_container{
-    position: relative;
-    &::after{
-        position: absolute;
-        content: "";
-        background-color: rede;
-        left: 0;
-        top: 0;
-        width: 100px;
-        height: 100px;
-        z-index: 10;
-    }
-    
+ 
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
 
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
     & .services_card{
         width: 330px;
         height: 250px;
@@ -26,18 +14,10 @@
         padding: 1.875rem;
         border-radius: var(--border-radius);
         box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.103);
-        /* background-color: var(--container-color); */
+        background-color: var(--container-color);
 
         transition: all 0.3s ease-in-out;
 
-        background: rgba(255, 255, 255, 0.1); /* fundo translúcido */
-        border-radius: 16px;
-        backdrop-filter: blur(10px); /* o "vidro embaçado" */
-        -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
-        border: 1px solid rgba(255, 255, 255, 0.2); /* borda suave */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* sombra suave */
-        padding: 2rem;
-        color: white;
 
         &:hover{
             transform: translateY(-10px);
