@@ -12,18 +12,7 @@
         padding: 1.875rem;
         border-radius: var(--border-radius);
         box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.103);
-        /* background-color: var(--container-color); */
-
-
-
-        /* Vamos tentar criar um efeito Glassmophion(vidro) */
-        background-color: rgba(34, 34, 34, 0.416);
-        backdrop-filter: blur(10px);
-         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2); /* borda suave */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* sombra suave */
-        padding: 2rem;
-        color: white;
+        background-color: var(--container-color);
 
         transition: all 0.3s ease-in-out;
         
