@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
+function mouseCard(){
+  console.log("teste")
+}
 
-
-const cardsElement = document.querySelector('.cards');
-cardsElement.addEventListener('click', () => {
-  console.log("Teste");
-})
 function Portifolio() {
+  const cardsElement = document.querySelectorAll('.cards');
+  cardsElement.addEventListener('click', mouseCard)
   const data = [
     {
       id: 1,
