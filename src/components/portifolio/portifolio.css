@@ -52,6 +52,11 @@
   border-radius: 15px;
   z-index: 0;
 
+  &:hover{
+    width: 50%;
+    transform: scaleY(10px);
+  }
+
 }
 
 .section_title{ 
