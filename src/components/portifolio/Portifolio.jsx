@@ -7,6 +7,10 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
 
 
+const cardsElement = document.querySelector('.cards');
+cardsElement.addEventListener('click', () => {
+  console.log("Teste");
+})
 function Portifolio() {
   const data = [
     {
@@ -53,11 +57,6 @@ function Portifolio() {
       description: "Um projeto responsivo usando Bootstrap."
     }
   ];
-  // let cardsElement = document.querySelectorAll('.cards');
-  // cardsElement.addEventListener('mouseover', () => {
-  //   console.log('Mouse over on card');
-  // }
-  // );
 
   return (
 
