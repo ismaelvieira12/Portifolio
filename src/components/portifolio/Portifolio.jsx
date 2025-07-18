@@ -62,7 +62,7 @@ function Portifolio() {
   return (
 
     <section className="container work section" id="portifolio">
-      <h2 className="section_title">Projetos Recentes</h2>
+      <h2 className="section_title">Projetos</h2>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
