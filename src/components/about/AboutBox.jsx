@@ -8,7 +8,7 @@ const AboutBox = () => {
 
         <div>
           <h3 className="about_title">12</h3>
-          <sapn className="about_subtitle">Repositórios</sapn>
+          <span className="about_subtitle">Repositórios</span>
         </div>
       </div>
 
@@ -17,7 +17,7 @@ const AboutBox = () => {
 
         <div>
           <h3 className="about_title">20</h3>
-          <sapn className="about_subtitle">Projetos</sapn>
+          <span className="about_subtitle">Projetos</span>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ const AboutBox = () => {
 
         <div>
           <h3 className="about_title">7</h3>
-          <sapn className="about_subtitle">Certificados</sapn>
+          <span className="about_subtitle">Certificados</span>
         </div>
       </div>
     </div>
