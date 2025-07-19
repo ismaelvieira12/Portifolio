@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import "../portifolio/portifolio.css"
 
 import { motion } from "framer-motion";
@@ -8,9 +9,10 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 
 
 function Portifolio() {
+  const [hovered, setHovered] = useState(null);
   const mouseMoveHandler = () => {
     const description = document.querySelector('.descrition');
-    description.style.display = 'flex';
+    description.style.display = 'block';
     console.log("passou o mouse");
   }
 
