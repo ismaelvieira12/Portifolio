@@ -20,19 +20,28 @@
   & .title{
     position: absolute;
     display: none;
-    color: #ffffff;
+    color: #fffcfc;
     z-index: 2;
-    font-size: 0.9rem;
+    font-family: "Crushed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-top: 10px;
-    bottom: 30px;
+    text-align: center;
     pointer-events: none; /* Permite interação com elementos abaixo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   & .descrition{
     position: absolute;
     display: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-style: normal;
     margin-top: 15px;
     bottom: 10px;
     color: #ffffff;
@@ -52,7 +61,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(65, 88, 110, 0.493); /* Fundo translúcido */
+      background: rgba(63, 62, 62, 0.658); /* Fundo translúcido */
       border-radius: 15px;
       z-index: 1;
       backdrop-filter: blur(8px); /* Efeito glassmorphism */
