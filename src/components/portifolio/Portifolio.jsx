@@ -11,11 +11,6 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 function Portifolio() {
   // Função para armazenar o item que está sendo passado o mouse
   const [hovered, setHoveredId] = useState(null);
-  // const mouseMoveHandler = () => {
-  //   const description = document.querySelector('.descrition');
-  //   description.style.display = 'block';
-  //   console.log("passou o mouse");
-  // }
 
   const data = [
     {
@@ -87,13 +82,18 @@ function Portifolio() {
             key={item.id} 
             className='cards'
             onMouseEnter={ () => setHoveredId(item.id) }
-            
-            >
+            onMouseLeave={ () => setHoveredId(null) }  
+          >
             <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
             </div>
             <p className='title'>{item.title}</p>
-            <span className='descrition'>{item.description}</span>
+            <span 
+              className='descrition' 
+              style={{ display: hovered === item.id ? 'block' : 'none' }}
+            >
+              {item.description}
+            </span>
           </div>
         ))}
       </motion.div>
