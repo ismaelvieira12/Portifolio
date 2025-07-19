@@ -51,7 +51,7 @@ function Portifolio() {
     },
 
     {
-      id: 6,
+      id: 7,
       image: "public/project/relógio-digital.png",
       title: "Relógio com Cronometro",
       description: "Um projeto responsivo usando Bootstrap."
