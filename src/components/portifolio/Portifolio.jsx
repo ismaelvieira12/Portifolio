@@ -9,12 +9,13 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 
 
 function Portifolio() {
-  const [hovered, setHovered] = useState(null);
-  const mouseMoveHandler = () => {
-    const description = document.querySelector('.descrition');
-    description.style.display = 'block';
-    console.log("passou o mouse");
-  }
+  // Função para armazenar o item que está sendo passado o mouse
+  const [hovered, setHoveredId] = useState(null);
+  // const mouseMoveHandler = () => {
+  //   const description = document.querySelector('.descrition');
+  //   description.style.display = 'block';
+  //   console.log("passou o mouse");
+  // }
 
   const data = [
     {
@@ -82,7 +83,12 @@ function Portifolio() {
         className="carrosel">
 
         {data.map((item) => (
-          <div onMouseEnter={mouseMoveHandler} key={item.id} className='cards'>
+          <div  
+            key={item.id} 
+            className='cards'
+            onMouseEnter={ () => setHoveredId(item.id) }
+            
+            >
             <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
             </div>
