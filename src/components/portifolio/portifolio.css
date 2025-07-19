@@ -66,8 +66,8 @@
       z-index: 1;
       backdrop-filter: blur(8px); /* Efeito glassmorphism */
       -webkit-backdrop-filter: blur(8px); /* Suporte Safari */
-      transition: all 1s !important;
       pointer-events: none; /* Permite interação com elementos abaixo */
+      transition: all 4s !important;
     }
   }
 }
