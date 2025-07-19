@@ -67,13 +67,9 @@ function Portifolio() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          duration: 1,
+          duration: 3,
           ease: "easeOut",
           delay: 0.2,
-        }}
-        style={{
-          backdropFilter: "blur(10px)",
-          WebkitBackdropFilter: "blur(10px)", // Safari support
         }}
         className="carrosel">
 
@@ -86,7 +82,7 @@ function Portifolio() {
           >
             <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
-            </div>
+            </div >
             <p 
               className='title'
               style={{display: hovered === item.id ? 'block' : 'none'}}
