@@ -62,7 +62,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(63, 62, 62, 0.658); /* Fundo translúcido */
+      background: rgba(63, 62, 62, 0.288); /* Fundo translúcido */
       border-radius: 15px;
       z-index: 1;
       backdrop-filter: blur(8px); /* Efeito glassmorphism */
