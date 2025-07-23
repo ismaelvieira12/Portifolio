@@ -41,7 +41,7 @@ function Portifolio() {
       id: 5,
       image: "public/project/jogo-da-velha.png",
       title: "Jogo da Velha",
-      description: "Um projeto responsivo usando Bootstrap."
+      description: "Um projeto feito com JavaScript puro."
     },
     {
       id: 6,
