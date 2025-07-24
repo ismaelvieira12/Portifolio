@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     
     <section id='contact'className="container contact section">
-        <h2 className="contact_titlle">Entre em contato</h2>
+        <h2 className="section_title">Entre em contato</h2>
       <form className='contact_form'>
         <div className='form_group'>
           <input placeholder='Nome' type="text" name='name' className='nome'/>
