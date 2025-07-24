@@ -41,5 +41,10 @@
         border-radius: 5px;
         border: 1px solid var(--border-color);
         font-size: var(--p-font-size);
+        
+        &:focus{
+            outline: none;
+            border-color: var(--primary-color);
+        }
     }
 }
