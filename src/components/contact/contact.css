@@ -1,6 +1,10 @@
-/* .contact_titlle {
+.contact_title {
+    font-size: var(--h1-font-size);
     text-align: center;
-} */
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+}
 .contact_form{
     max-width: 900px;
     margin: 0 auto;
