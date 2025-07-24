@@ -4,9 +4,12 @@ import "../contact/contact.css";
 const Contact = () => {
   return (
     <>
-      <form id='contact' className="container contact section">
+    <section id='contact'className="container contact section">
+      <form>
         <h2 className="section_title">Contato</h2>
       </form>
+
+    </section>
     </>
   );
 }
