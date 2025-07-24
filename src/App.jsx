@@ -15,9 +15,9 @@ function App() {
 
   return (
     <>
+    <div className='particulas'></div>
       <Sadbar />
     <main className='main'>
-      {/*home*/}
       <Home />
       <About />
       <Services />

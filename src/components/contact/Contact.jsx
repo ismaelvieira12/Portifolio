@@ -3,7 +3,6 @@ import "../contact/contact.css";
 
 const Contact = () => {
   return (
-    
     <section id='contact'className="container contact section">
         <h2 className="contact_title">Entre em contato</h2>
       <form className='contact_form'>
