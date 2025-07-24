@@ -33,7 +33,7 @@
     padding: 5px;
 }
 .form_group_textarea{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     & textarea{
         width: 100%;
         height: 150px;
