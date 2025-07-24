@@ -10,7 +10,7 @@
 }
 .nome{
     width: 100%;
-    padding: 0.625rem;
+    padding: 0.750rem;
     border-radius: 5px;
     border: 1px solid var(--border-color);
     font-size: var(--p-font-size);
@@ -20,7 +20,7 @@
 }
 .email{
     width: 100%;
-    padding: 0.625rem;
+    padding: 0.750rem;
     border-radius: 5px;
     border: 1px solid var(--border-color);
     font-size: var(--p-font-size);
@@ -45,7 +45,7 @@
         border-radius: 5px;
         border: 1px solid var(--border-color);
         font-size: var(--p-font-size);
-        background-color: aliceblue;
+        background-color: rgb(217, 225, 233);
         &:focus{
             outline: none;
             border-color: var(--primary-color);
