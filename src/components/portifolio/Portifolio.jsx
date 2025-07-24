@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import "../portifolio/portifolio.css"
 
 import { motion } from "framer-motion";
@@ -8,6 +9,9 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 
 
 function Portifolio() {
+  // Função para armazenar o item que está sendo passado o mouse
+  const [hovered, setHoveredId] = useState(null);
+
   const data = [
     {
       id: 1,
@@ -37,7 +41,7 @@ function Portifolio() {
       id: 5,
       image: "public/project/jogo-da-velha.png",
       title: "Jogo da Velha",
-      description: "Um projeto responsivo usando Bootstrap."
+      description: "Um projeto feito com JavaScript puro."
     },
     {
       id: 6,
@@ -47,7 +51,7 @@ function Portifolio() {
     },
 
     {
-      id: 6,
+      id: 7,
       image: "public/project/relógio-digital.png",
       title: "Relógio com Cronometro",
       description: "Um projeto responsivo usando Bootstrap."
@@ -63,23 +67,34 @@ function Portifolio() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          duration: 1,
+          duration: 3,
           ease: "easeOut",
           delay: 0.2,
-        }}
-        style={{
-          backdropFilter: "blur(10px)",
-          WebkitBackdropFilter: "blur(10px)", // Safari support
         }}
         className="carrosel">
 
         {data.map((item) => (
-          <div key={item.id} className='cards'>
+          <div  
+            key={item.id} 
+            className='cards'
+            onMouseEnter={ () => setHoveredId(item.id) }
+            onMouseLeave={ () => setHoveredId(null) }  
+          >
             <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
-            </div>
-            <p className='title'>{item.title}</p>
-            <span className='descrition'>{item.description}</span>
+            </div >
+            <p 
+              className='title'
+              style={{display: hovered === item.id ? 'block' : 'none'}}
+            >
+              {item.title}
+            </p>
+            <span 
+              className='descrition' 
+              style={{ display: hovered === item.id ? 'block' : 'none' }}
+            >
+              {item.description}
+            </span>
           </div>
         ))}
       </motion.div>
