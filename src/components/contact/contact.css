@@ -9,13 +9,26 @@
     border-radius: 10px;
 }
 .nome{
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    font-size: var(--p-font-size);
+    /* margin-bottom: 1rem; */
 
 }
 .email{
-
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    font-size: var(--p-font-size);
 }
 .form_group{
-
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: aqua;
 }
 .form_group_textarea{
 

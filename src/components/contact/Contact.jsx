@@ -9,8 +9,6 @@ const Contact = () => {
       <form className='contact_form'>
         <div className='form_group'>
           <input placeholder='Nome' type="text" name='name' className='nome'/>
-        </div>
-        <div className='form_group'>
           <input placeholder='Email' type="email" name="email" className='email' />
         </div>
         <div className='form_group_textarea'>
