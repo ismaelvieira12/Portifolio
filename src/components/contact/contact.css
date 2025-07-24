@@ -61,3 +61,9 @@
         outline: none;
     }
 }
+
+.btn-primary{
+    border-radius: 8px;
+    margin: 5px 10px 0px 5px ;
+    width: 99.2%;
+}

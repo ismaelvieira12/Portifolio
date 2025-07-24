@@ -14,8 +14,8 @@ const Contact = () => {
         <div className='form_group_textarea'>
           <textarea placeholder='Escreva aqui...' name="Texto" id="textArea" className='textArea'></textarea>
         </div>
+        <button type='submit' className='btn btn-primary'>Enviar para WhatsApp</button>
       </form>
-
     </section>
     
   );
