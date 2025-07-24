@@ -14,7 +14,7 @@
     border-radius: 5px;
     border: 1px solid var(--border-color);
     font-size: var(--p-font-size);
-    background-color: aliceblue;
+    background-color: rgb(217, 225, 233);
     /* margin-bottom: 1rem; */
 
 }
@@ -24,7 +24,7 @@
     border-radius: 5px;
     border: 1px solid var(--border-color);
     font-size: var(--p-font-size);
-    background-color: aliceblue;
+   background-color: rgb(217, 225, 233);
 }
 .form_group{
     display: flex;
