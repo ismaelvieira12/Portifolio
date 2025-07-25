@@ -9,7 +9,7 @@ const Contact = () => {
     const email = document.querySelector('#email');
     const textArea = document.querySelector('#textArea');
 
-    const texto = `Olá, meu nome é ${name.value}, meu email é ${email.value}, : ${textArea.value}.`;
+    const texto = `Olá, meu nome é ${name.value}, tenho interesse no seu trabalho, aqui está meu email ${email.value}, : ${textArea.value}.`;
     const mensagemFormatada = encodeURIComponent(texto);
     const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemFormatada}`;
     window.open(url, '_blank');
