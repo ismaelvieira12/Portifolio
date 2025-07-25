@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "../portifolio/portifolio.css"
 
 import { motion } from "framer-motion";
-
+import img1 from "/project/dashboard.png";
 import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
 
@@ -15,7 +15,7 @@ function Portifolio() {
   const data = [
     {
       id: 1,
-      image: "public/project/dashboard.png",
+      image: `${img1}`,
       title: "Dashboard",
       description: "Um relógio digital simples feito com React."
     },
