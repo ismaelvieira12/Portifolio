@@ -4,6 +4,12 @@ import "../portifolio/portifolio.css"
 
 import { motion } from "framer-motion";
 import img1 from "/project/dashboard.png";
+import img2 from "/project/banco-de-horas.jpg";
+import img3 from "/project/dashboard2.jpg"; 
+import img4 from "/project/gerador-de-senha.jpg";
+import img5 from "/project/jogo-da-velha.png";
+import img6 from "/project/projeto-com-bootstrap.jpg";
+import img7 from "/project/relógio-digital.png";
 import {Swiper, SwiperSlide} from 'swiper/react'
 // import Menu from './Menu';
 
@@ -15,44 +21,44 @@ function Portifolio() {
   const data = [
     {
       id: 1,
-      image: `${img1}`,
+      image: img1,
       title: "Dashboard",
       description: "Um relógio digital simples feito com React."
     },
     {
       id: 2,
-      image: 'public/project/banco-de-horas.jpg',
+      image: img2,
       title: "Banco de Horas Extras",
       description: "Um jogo da velha interativo."
     },
     {
       id: 3,
-      image: "public/project/dashboard2.jpg",
+      image: img3,
       title: "Dashboard",
       description: "Um gerador de senhas seguras."
     },
     {
       id: 4,
-      image: "public/project/gerador-de-senha.jpg",
+      image: img4,
       title: "Gerador de Senhas",
       description: "Um dashboard para visualização de dados."
     },
     {
       id: 5,
-      image: "public/project/jogo-da-velha.png",
+      image: img5,
       title: "Jogo da Velha",
       description: "Um projeto feito com JavaScript puro."
     },
     {
       id: 6,
-      image: "public/project/projeto-com-bootstrap.jpg",
+      image: img6,
       title: "Site para uma padaria",
       description: "Um projeto responsivo usando Bootstrap."
     },
 
     {
       id: 7,
-      image: "public/project/relógio-digital.png",
+      image: img7,
       title: "Relógio com Cronometro",
       description: "Um projeto responsivo usando Bootstrap."
     }
