@@ -4,7 +4,7 @@ aside{
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     border-right: 1px solid rgba(0, 0, 0, 0.089);
     padding: 2.5rem;
     width: 110px;
@@ -32,7 +32,7 @@ aside{
 }
 & .copyright{
     font-size: var(--small-font-size);
-    color: hsl(245, 15%, 65%);
+    color: hsl(247, 6%, 28%);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
     

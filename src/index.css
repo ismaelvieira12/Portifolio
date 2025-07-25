@@ -75,7 +75,7 @@ body{
   height: 100%;
   z-index: -1; /* Coloca as partículas atrás de outros elementos */
   pointer-events: none;
-  opacity: 0.5; /* Ajusta a opacidade das partículas */
+  opacity: 1; /* Ajusta a opacidade das partículas */
   background: 
   radial-gradient(circle at 10% 20%, rgb(164, 201, 238) 0%, transparent 20%),
   radial-gradient(circle at 90% 80%, rgb(3, 82, 134) 0%, transparent 20%),  #00000027;
