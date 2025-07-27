@@ -90,3 +90,28 @@
     scale: 1.1;
   }
 }
+
+
+
+/* Adicionando o style para mobile */
+
+@media (max-width: 768px) {
+  .carrosel {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .slider-item {
+    height: 180px;
+    width: 280px;
+  }
+
+  .cards {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .descrition {
+      font-size: 0.9rem;
+    }
+  }
+}
