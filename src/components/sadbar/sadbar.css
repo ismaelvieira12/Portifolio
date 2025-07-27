@@ -36,3 +36,11 @@ aside{
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
 }
+
+/* Layout para mobile   */
+
+@media (max-width: 768px){
+    aside{
+        display: none;
+    }
+}

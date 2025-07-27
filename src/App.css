@@ -2,4 +2,10 @@ main{
     margin-left: 120px;
 }
 
+
+@media (max-width: 768px){
+    main{
+        margin-left: 0;
+    }
+}
  
