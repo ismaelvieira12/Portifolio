@@ -89,7 +89,7 @@ function Portifolio() {
             <div className='slider-item-container' id='hover'>
               <img src={item.image} alt="Slider" className='slider-item' />
             </div >
-            < 
+            <p 
               className='title'
               style={{display: hovered === item.id ? 'block' : 'none'}}
             >
