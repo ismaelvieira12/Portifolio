@@ -42,5 +42,7 @@ aside{
 @media (max-width: 768px){
     aside{
         left: 0;
+        width: 100%;
+        
     }
 }
