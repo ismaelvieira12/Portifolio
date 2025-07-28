@@ -46,7 +46,7 @@ aside{
         left: 0;
         width: 100%; 
         min-height: 60px !important;
-        background-color: cadetblue;
+        background-color: #ffffff;
         flex-direction: row;
         align-items: center;   /* Centraliza os ícones verticalmente */
         padding: 0 1rem;       /* Padding horizontal */
