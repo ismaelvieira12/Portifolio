@@ -56,11 +56,10 @@ aside{
         }
 
         & .nav_list {
-            display: flex;
-            
-            flex: 1;
-            justify-content: space-around;
-            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 2.5rem;
+            width: 100%;
         }
 
         & .copyright {
