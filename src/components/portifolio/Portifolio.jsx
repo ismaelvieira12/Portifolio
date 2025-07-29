@@ -69,6 +69,7 @@ function Portifolio() {
     <section className="container work section" id="portifolio">
       <h2 className="section_title">Projetos</h2>
 
+{/* Criando uma responsividade para o layout mobile */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
