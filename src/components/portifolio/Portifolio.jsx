@@ -108,7 +108,25 @@ function Portifolio() {
           ))}
         </motion.div>
       ) : (
-        <Swiper></Swiper>)}
+         <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          style={{ paddingBottom: "2rem" }}
+        >
+          {data.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className='cards'>
+                <div className='slider-item-container'>
+                  <img src={item.image} alt="Slider" className='slider-item' />
+                </div>
+                <p className='title'>{item.title}</p>
+                <span className='descrition'>{item.description}</span>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+)}
     </section>
   );
 }
