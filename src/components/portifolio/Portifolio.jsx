@@ -70,41 +70,45 @@ function Portifolio() {
       <h2 className="section_title">Projetos</h2>
 
 {/* Criando uma responsividade para o layout mobile */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 1,
-          ease: "easeOut",
-          delay: 0.2,
-        }}
-        className="carrosel">
 
-        {data.map((item) => (
-          <div  
-            key={item.id} 
-            className='cards'
-            onMouseEnter={ () => setHoveredId(item.id) }
-            onMouseLeave={ () => setHoveredId(null) }  
-          >
-            <div className='slider-item-container' id='hover'>
-              <img src={item.image} alt="Slider" className='slider-item' />
-            </div >
-            <p 
-              className='title'
-              style={{display: hovered === item.id ? 'block' : 'none'}}
+      {window.innerWidth > 768 ? (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+            delay: 0.2,
+          }}
+          className="carrosel">
+
+          {data.map((item) => (
+            <div  
+              key={item.id} 
+              className='cards'
+              onMouseEnter={ () => setHoveredId(item.id) }
+              onMouseLeave={ () => setHoveredId(null) }  
             >
-              {item.title}
-            </p>
-            <span 
-              className='descrition' 
-              style={{ display: hovered === item.id ? 'block' : 'none' }}
-            >
-              {item.description}
-            </span>
-          </div>
-        ))}
-      </motion.div>
+              <div className='slider-item-container' id='hover'>
+                <img src={item.image} alt="Slider" className='slider-item' />
+              </div >
+              <p 
+                className='title'
+                style={{display: hovered === item.id ? 'block' : 'none'}}
+              >
+                {item.title}
+              </p>
+              <span 
+                className='descrition' 
+                style={{ display: hovered === item.id ? 'block' : 'none' }}
+              >
+                {item.description}
+              </span>
+            </div>
+          ))}
+        </motion.div>
+      ) : (
+        <Swiper></Swiper>)}
     </section>
   );
 }
