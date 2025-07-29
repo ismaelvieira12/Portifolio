@@ -109,10 +109,7 @@ function Portifolio() {
         </motion.div>
       ) : (
          <Swiper
-          spaceBetween={20}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          style={{ paddingBottom: "2rem" }}
+         
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
