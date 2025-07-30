@@ -115,7 +115,7 @@ function Portifolio() {
         </motion.div>
       ) : (
          <Swiper
-          // effect={'coverflow'}
+          effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           loop={true}
@@ -124,7 +124,7 @@ function Portifolio() {
             rotate: 0,
             stretch: 0,
             depth: 100,
-            modifier: 2.5,
+            modifier: 3.2,
             slideShadows: true,
           }}
           Pagination={{el:'.slider-pagination', clickable: true}}
@@ -148,10 +148,10 @@ function Portifolio() {
           ))}
           <div className="slider-controler">
             <div className="slider-btn-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
+              <i class="fa-solid fa-angle-left"></i>
             </div>
             <div className="slider-btn-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
+              <i class="fa-solid fa-angle-right"></i>
             </div>
             <div className="slider-pagination"></div>
           </div>
