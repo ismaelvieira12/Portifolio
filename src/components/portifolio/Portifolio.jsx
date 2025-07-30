@@ -11,6 +11,8 @@ import img5 from "/project/jogo-da-velha.png";
 import img6 from "/project/projeto-com-bootstrap.jpg";
 import img7 from "/project/relógio-digital.png";
 import {Swiper, SwiperSlide} from 'swiper/react'
+import 'swiper/css';
+
 // import Menu from './Menu';
 
 
