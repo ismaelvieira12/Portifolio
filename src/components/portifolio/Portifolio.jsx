@@ -115,7 +115,7 @@ function Portifolio() {
         </motion.div>
       ) : (
          <Swiper
-          effect={'coverflow'}
+          // effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           loop={true}
@@ -127,7 +127,13 @@ function Portifolio() {
             modifier: 2.5,
             slideShadows: true,
           }}
-          modules={[Navigation, Pagination, EffectCoverflow]}
+          Pagination={{el:'.slider-pagination', clickable: true}}
+          navigation={{
+            nextEl: '.slider-btn-next',
+            prevEl: '.slider-btn-prev',
+            clickable: true,
+          }}  
+          modules={[EffectCoverflow, Pagination, Navigation]}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>

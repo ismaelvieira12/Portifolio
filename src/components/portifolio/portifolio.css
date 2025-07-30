@@ -98,18 +98,28 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   
-  .slider-item {
-    height: 180px;
-    width: 280px;
-  }
-  
   .cards {
     .title {
       font-size: 1.5rem;
     }
-    
+    .slider-item-container {
+      position: relative;
+      width: 50%;
+      &:hover::before{
+        width: 100%;
+      }
+    }
     .descrition {
       font-size: 0.9rem;
+    }
+  }
+  .slider-item {
+    height: 320px;
+    width: 350px;
+    margin: auto;
+
+    &:hover {
+      scale: 1;
     }
   }
 }
