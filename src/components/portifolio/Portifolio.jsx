@@ -115,7 +115,18 @@ function Portifolio() {
         </motion.div>
       ) : (
          <Swiper
-         
+          effect={coverflow}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: true,
+          }}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
@@ -128,6 +139,11 @@ function Portifolio() {
               </div>
             </SwiperSlide>
           ))}
+          <div className="slider-controler">
+            <div className="slider-btn-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+          </div>
         </Swiper>
 )}
     </section>
