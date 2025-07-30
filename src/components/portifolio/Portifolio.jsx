@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+// import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 
 // import Menu from './Menu';
 
@@ -120,13 +120,13 @@ function Portifolio() {
           centeredSlides={true}
           loop={true}
           slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2.5,
-            slideShadows: true,
-          }}
+          // coverflowEffect={{
+          //   rotate: 0,
+          //   stretch: 0,
+          //   depth: 100,
+          //   modifier: 2.5,
+          //   slideShadows: true,
+          // }}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
@@ -143,6 +143,10 @@ function Portifolio() {
             <div className="slider-btn-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>
             </div>
+            <div className="slider-btn-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div className="slider-pagination"></div>
           </div>
         </Swiper>
 )}
