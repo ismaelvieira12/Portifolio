@@ -91,33 +91,64 @@
   }
 }
 
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5;
-  }
-}
-
-
-
 /* Adicionando o style para mobile */
 
 @media (max-width: 768px) {
   .carrosel {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-
+  
   .slider-item {
     height: 180px;
     width: 280px;
   }
-
+  
   .cards {
     .title {
       font-size: 1.5rem;
     }
-
+    
     .descrition {
       font-size: 0.9rem;
     }
   }
 }
+
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: #797979;
+  transition: all 0.5s ease-in-out;
+
+  &:hover{
+    background-color: #232222;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+
