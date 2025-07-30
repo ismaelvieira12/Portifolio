@@ -10,8 +10,12 @@ import img4 from "/project/gerador-de-senha.jpg";
 import img5 from "/project/jogo-da-velha.png";
 import img6 from "/project/projeto-com-bootstrap.jpg";
 import img7 from "/project/relógio-digital.png";
-import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import {Swiper, SwiperSlide} from 'swiper/react'
+import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 
 // import Menu from './Menu';
 

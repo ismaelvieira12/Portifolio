@@ -91,6 +91,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
 
 
 /* Adicionando o style para mobile */
