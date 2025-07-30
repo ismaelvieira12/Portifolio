@@ -55,4 +55,8 @@
     .timeline{
         margin: 1rem 0;
     }
+
+    .section_title{
+        text-align: center;
+    }
 }
