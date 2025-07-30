@@ -4,7 +4,7 @@
 
 .services_container{
  
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     column-gap: 1.875rem;
 
     & .services_card{
@@ -36,3 +36,19 @@
     }
 } 
 
+@media (max-width: 768px){
+    .section-titel{
+        margin-left: 0;
+        text-align: center;
+    }
+    .services_container{
+        
+        & .services_card{
+            margin: 0.5rem auto;
+
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+}
