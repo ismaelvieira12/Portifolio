@@ -116,7 +116,7 @@
   .slider-item {
     height: 320px;
     width: 347px;
-
+    /* margin: auto; */
 
     &:hover {
       scale: none;
