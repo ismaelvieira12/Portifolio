@@ -183,3 +183,15 @@
         top: 29%;
     }
 }   
+
+@media (max-width: 768px){
+    .home{
+        min-height: 90vh;  
+        & .intro{
+            padding: 0 1rem;
+        }
+        & .shapes{
+            display: none;
+        }
+    }
+}

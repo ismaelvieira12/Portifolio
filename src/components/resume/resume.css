@@ -1,6 +1,6 @@
 .resume_container{
     margin-top: 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     column-gap: 1.875rem;   
 }
 
