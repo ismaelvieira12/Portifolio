@@ -55,11 +55,16 @@ aside{
             display: none;
         }
 
+        & .nav{
+            width: 100%;
+        }
+
         & .nav_list {
             flex-direction: row;
             justify-content: space-between;
             column-gap: 2.5rem;
             width: 100%;
+            padding: 0.9rem 0;
         }
 
         & .copyright {

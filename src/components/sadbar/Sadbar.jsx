@@ -2,6 +2,10 @@ import React from 'react';
 import "../sadbar/sadbar.css";
 import Logo from "../../assets/favicon_io/logo.png"
 const Sadbar = () => {
+  const larguraTela = window.innerWidth
+  const alturaTela = window.innerHeight
+  console.log(alturaTela);
+  console.log(larguraTela);
   return (
     <aside className='aside'>
       <a href="#home" className="nav_logo">
