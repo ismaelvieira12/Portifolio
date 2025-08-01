@@ -141,5 +141,11 @@
       align-items: center;
       cursor: pointer;
     }
+
+    /* & .slider-pagination{
+      background-color: #ffffff;
+      width: 20px;
+      height: 20px;
+    } */
   }
 }
