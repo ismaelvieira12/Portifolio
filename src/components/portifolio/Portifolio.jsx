@@ -147,12 +147,6 @@ function Portifolio() {
             </SwiperSlide>
           ))}
           <div className="slider-controler">
-            <div className="slider-btn-prev slider-arrow">
-              <i class="fa-solid fa-angle-left"></i>
-            </div>
-            <div className="slider-btn-next slider-arrow">
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
             <div className="slider-pagination"></div>
           </div>
         </Swiper>
