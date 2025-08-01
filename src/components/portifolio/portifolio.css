@@ -141,13 +141,13 @@
   }
 
   .slider-pagination .swiper-pagination-bullet {
-    background: #000;
+    background: #000000a0;
     opacity: 0.6;
   }
 
   .slider-pagination .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #007aff;
+    background: #007bff82;
   }
 
 }
