@@ -110,9 +110,8 @@
         grid-template-columns: 1fr;
         padding: 1.875rem 0.9375rem;
     }
-    .development{
-        margin-top: 1rem;
-
+    .about_skills:nth-child(2){
+        margin-top: 2rem;
     }
     .about_img{
         display: none;
