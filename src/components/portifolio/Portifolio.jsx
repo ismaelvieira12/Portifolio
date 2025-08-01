@@ -125,9 +125,9 @@ function Portifolio() {
             stretch: 0,
             depth: 100,
             modifier: 3.2,
-            slideShadows: true,
+            slideShadows: false,
           }}
-          Pagination={{el:'.slider-pagination', clickable: true}}
+          pagination={{el:'.slider-pagination', clickable: true}}
           navigation={{
             nextEl: '.slider-btn-next',
             prevEl: '.slider-btn-prev',
@@ -153,7 +153,7 @@ function Portifolio() {
             <div className="slider-btn-next slider-arrow">
               <i class="fa-solid fa-angle-right"></i>
             </div>
-            {/* <div className="slider-pagination"></div> */}
+            <div className="slider-pagination"></div>
           </div>
         </Swiper>
 )}
