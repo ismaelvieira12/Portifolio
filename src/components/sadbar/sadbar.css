@@ -64,7 +64,7 @@ aside{
             justify-content: space-between;
             column-gap: 2.5rem;
             width: 100%;
-            padding: 0.9rem 0;
+            padding: 0.2rem 0;
         }
 
         & .copyright {
