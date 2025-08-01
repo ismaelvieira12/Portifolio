@@ -123,4 +123,16 @@
       scale: none;
     }
   }
+
+  .slider-controler{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    & .slider-arrow{
+      background-color: #ffffff;
+    }
+  }
 }
