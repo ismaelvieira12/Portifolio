@@ -133,11 +133,9 @@
 
   }
   .slider-pagination {
-    /* position: relative; */
-    /* bottom: 10px; */
     display: flex;
     justify-content: center;
-    /* margin-top: 20px; */
+  
   }
 
   .slider-pagination .swiper-pagination-bullet {
