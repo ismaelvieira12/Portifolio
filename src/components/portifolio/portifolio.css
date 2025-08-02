@@ -97,7 +97,7 @@
 @media (max-width: 768px) {
 
   .cards {
-    /* margin: 2.5rem auto; */
+    margin: 2.5rem auto;
     width: 70%;
     box-shadow: none;
     .title {
@@ -125,7 +125,6 @@
   }
 
   .slider-controler{
-    
     display: flex;
     justify-content: center;
     align-items: center;
