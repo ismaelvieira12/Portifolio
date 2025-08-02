@@ -120,6 +120,7 @@ function Portifolio() {
           centeredSlides={true}
           loop={true}
           slidesPerView={'auto'}
+          spaceBetween={0}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -132,7 +133,6 @@ function Portifolio() {
             nextEl: '.slider-btn-next',
             prevEl: '.slider-btn-prev',
             clickable: true,
-            spaceBetween={20}
           }}  
           modules={[EffectCoverflow, Pagination, Navigation]}
         >
