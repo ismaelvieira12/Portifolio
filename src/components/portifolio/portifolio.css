@@ -136,6 +136,10 @@
     justify-content: center;
   
   }
+  .swiper-slide {
+    width: 370px !important; /* ou o tamanho da .slider-item */
+    margin-right: 0px !important; /* zera margem lateral, se existir */
+  } 
 
   .slider-pagination .swiper-pagination-bullet {
     background: #000000a0;
