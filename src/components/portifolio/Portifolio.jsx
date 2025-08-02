@@ -132,6 +132,7 @@ function Portifolio() {
             nextEl: '.slider-btn-next',
             prevEl: '.slider-btn-prev',
             clickable: true,
+            spaceBetween={20}
           }}  
           modules={[EffectCoverflow, Pagination, Navigation]}
         >
