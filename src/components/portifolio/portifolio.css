@@ -138,6 +138,7 @@
   
   }
   .swiper-slide {
+    filter: blur(4px);
     width: 370px !important; /* ou o tamanho da .slider-item */
     margin-right: 0px !important; /* zera margem lateral, se existir */
   } 
