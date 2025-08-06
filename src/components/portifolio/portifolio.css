@@ -99,7 +99,7 @@
   .cards {
     margin: 2.5rem auto;
     width: 85%;
-    he
+    /* height: 350px; */
     box-shadow: none;
     .title {
       font-size: 1.5rem;
