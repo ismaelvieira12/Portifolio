@@ -143,6 +143,9 @@
     margin-right: 0px !important; /* zera margem lateral, se existir */
   } 
 
+  .swiper-slide-active {
+    filter: none;
+  }
   .slider-pagination .swiper-pagination-bullet {
     background: #000000a0;
     opacity: 0.6;
