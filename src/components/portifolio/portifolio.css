@@ -106,12 +106,14 @@
     .slider-item-container {
       position: relative;
       width: 100%;
-      &:hover::before{
-        width: 100%;
+      &::before{
+        display: none;
       }
     }
     .descrition {
       font-size: 0.9rem;
+      opacity: 1;
+      color: #000;
     }
   }
   .slider-item {
