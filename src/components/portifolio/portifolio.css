@@ -107,20 +107,10 @@
     .slider-item-container {
       position: relative;
       width: 100%;
-      &::before{
-        /* display: none; */
-      }
     }
-    .title{
-      /* opacity: 1;
-      color: #000;
-      transform: translate(-50%, -50%) scale(1); */
-    }
+    
     .descrition {
       font-size: 0.9rem;
-      /* opacity: 1; */
-      /* color: #000; */
-      /* transform: translateY(0); */
     }
   }
   .slider-item {
