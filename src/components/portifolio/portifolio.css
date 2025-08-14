@@ -98,6 +98,10 @@
 
   .timeline{
     margin-right: 10px;
+
+    .timeline_text{
+      text-align: justify;
+    }
   }
 
   .cards {
