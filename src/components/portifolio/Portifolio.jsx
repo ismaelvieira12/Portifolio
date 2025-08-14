@@ -136,17 +136,20 @@ function Portifolio() {
           }}  
           modules={[EffectCoverflow, Pagination, Navigation]}
         >
-          {data.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div className='cards'>
-                <div className='slider-item-container'>
-                  <img src={item.image} alt="Slider" className='slider-item' />
-                </div>
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className='cards'>
+              <div className='slider-item-container'>
+                <img src={item.image} alt="Slider" className='slider-item' />
+              </div>
+              {/* Título e descrição abaixo da imagem */}
+              <div className="card-info">
                 <p className='title'>{item.title}</p>
                 <span className='descrition'>{item.description}</span>
               </div>
-            </SwiperSlide>
-          ))}
+            </div>
+          </SwiperSlide>
+        ))}
           <div className="slider-controler">
             <div className="slider-pagination"></div>
           </div>
