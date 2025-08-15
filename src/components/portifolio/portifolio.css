@@ -20,7 +20,7 @@
 
   .title {
     position: absolute;
-    color: #201f1f;
+    color: #ffffff;
     z-index: 2;
     font-family: "Crushed", sans-serif;
     font-size: 1.8rem;
@@ -96,41 +96,88 @@
 /* Adicionando o style para mobile */
 
 @media (max-width: 768px) {
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+    width: 85%; 
   }
 
+  .slider-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  
+  .title {
+    position: absolute;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Crushed", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
   /* Efeito vidro automático no slide ativo */
   .swiper-slide-active .cards .slider-item-container::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(63, 62, 62, 0.384);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 15px;
     z-index: 1;
     opacity: 0;
-    animation: fadeInUp 0.5s ease forwards;
-    animation-delay: 1s;
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 0.5s;
   }
 
+  .slider-item:hover{
+    scale: none;
+  }
   /* Título com delay */
   .swiper-slide-active .cards .title {
-    animation: fadeInUp 0.5s ease forwards;
-    animation-delay: 1s;
+    color: #000000;
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 0.4s;
   }
 
   /* Descrição com delay maior */
   .swiper-slide-active .cards .descrition {
-    animation: fadeInUp 0.5s ease forwards;
-    animation-delay: 1.2s;
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 1.5s;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
   }
 }
