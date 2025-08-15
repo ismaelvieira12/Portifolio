@@ -149,6 +149,8 @@
   .slider-item {
     height: 300px;
     width: 100%;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
     &:hover {
       scale: none !important;
     }
