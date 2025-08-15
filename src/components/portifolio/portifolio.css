@@ -97,7 +97,7 @@
 @media (max-width: 768px) {
 
   .timeline{
-    margin-right: 10px;
+    margin-right: 5px;
 
     .timeline_text{
       text-align: justify;
