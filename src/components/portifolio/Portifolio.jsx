@@ -146,7 +146,7 @@ function Portifolio() {
                 <p className="title">{item.title}</p>
                 <span className="description">{item.description}</span>
               </div>
-            <
+            </div>
           </SwiperSlide>
 
           ))}
