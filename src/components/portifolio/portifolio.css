@@ -83,6 +83,7 @@
 .slider-item {
   height: 220px;
   width: 340px;
+  object-fit: cover;
   border-radius: 15px;
   z-index: 0;
   transition: all 0.9s;
@@ -95,94 +96,88 @@
 /* Adicionando o style para mobile */
 
 @media (max-width: 768px) {
-
-  .timeline{
-    margin-right: 5px;
-
-    .timeline_text{
-      text-align: justify;
-    }
-  }
-
-  .cards {
-    margin: 2.5rem auto;
-    height: 100%;
-    box-shadow: none;
-    background-color: #fff;
-    width: 80%;
-    .title {
-      font-size: 1.5rem;
-    }
-    .slider-item-container {
-      position: relative;
-      width: 100%;
-    }
-    
-    .descrition {
-      font-size: 0.9rem;
-    }
-  }
-  .cards {
+  .cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+    width: 85%; 
+  }
+
+  .slider-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
   }
 
-  .slider-item-container {
-    width: 100%;
-  }
-
+  
   .title {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0.5rem 0 0;
+    position: absolute;
+    color: #ffffff;
+    z-index: 2;
+    font-family: "Crushed", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
     text-align: center;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  /* Efeito vidro automático no slide ativo */
+  .swiper-slide-active .cards .slider-item-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(63, 62, 62, 0.384);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 0.5s;
   }
 
-  .descrition {
-    display: block;
-    font-size: 0.9rem;
-    color: #555;
-    text-align: center;
+  .slider-item:hover{
+    scale: none;
   }
-  .slider-item {
-    height: 300px;
-    width: 100%;
-    &:hover {
-      scale: none !important;
+  /* Título com delay */
+  .swiper-slide-active .cards .title {
+    color: #000000;
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 0.4s;
+  }
+
+  /* Descrição com delay maior */
+  .swiper-slide-active .cards .descrition {
+    animation: fadeInUp 4s ease forwards;
+    animation-delay: 1.5s;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
     }
   }
-
-  .slider-controler{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
-  }
-  .slider-pagination {
-    display: flex;
-    justify-content: center;
-  
-  }
-  .swiper-slide {
-    filter: blur(4px);
-    width: 370px !important; /* ou o tamanho da .slider-item */
-    margin-right: 0px !important; /* zera margem lateral, se existir */
-  } 
-
-  .swiper-slide-active {
-    filter: none;
-  }
-  .slider-pagination .swiper-pagination-bullet {
-    background: #000000a0;
-    opacity: 0.6;
-  }
-
-  .slider-pagination .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #007bff82;
-  }
-
 }

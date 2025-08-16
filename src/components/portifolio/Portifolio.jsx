@@ -148,7 +148,6 @@ function Portifolio() {
               </div>
             </div>
           </SwiperSlide>
-
           ))}
           <div className="slider-controler">
             <div className="slider-pagination"></div>
