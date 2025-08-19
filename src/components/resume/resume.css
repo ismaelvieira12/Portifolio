@@ -1,7 +1,8 @@
-.resume_container{
+.resume_container {
     margin-top: 3rem;
+    display: grid; /* Adicione esta linha */
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    column-gap: 1.875rem;   
+    column-gap: 1.875rem;  
 }
 
 .timeline{
@@ -27,7 +28,7 @@
         width: 1px;
         height: 100%;
         background-color: var(--Second-color);
-        left: 0.25rem;
+        left: 1.2rem; /* Ajuste conforme o ícone */
         top: 0;
     }    
     & i{
@@ -35,7 +36,7 @@
         color: var(--Second-color);
         font-size: var(--h2-font-size);
         background-color: var(--container-color);
-        left: -0.4rem;
+        left: 0.5rem;
         top: 0;
         padding: 0.4375rem 0;
     }
@@ -52,11 +53,13 @@
 }
 
 @media (max-width: 768px){
-    .timeline{
-        margin: 1rem 0;
+    .resume_container {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        padding: 0 0.5rem;
     }
-
-    .section_title{
-        text-align: center;
+    .timeline {
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
     }
 }
