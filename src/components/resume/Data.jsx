@@ -9,15 +9,6 @@ const Data = [
  
     },
     {
-        id: 2,
-        category: "experiência",
-        icon: "icon-graduation",
-        year: '2022-2023',
-        title: "JavaScript - Basico",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
-    
-    },
-    {
         id: 3,
         category: "educação",
         icon: "icon-graduation",
@@ -27,6 +18,15 @@ const Data = [
         
     },
     {
+        id: 2,
+        category: "experiência",
+        icon: "icon-graduation",
+        year: '2022-2023',
+        title: "JavaScript - Basico",
+        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
+    
+    },
+    {
         id: 4,
         category: "experiência",
         icon: "icon-graduation",
@@ -34,7 +34,7 @@ const Data = [
         title: "JavaScript - Avançado",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
         
-    }
+    },
 ]
 
 export default Data
