@@ -13,11 +13,9 @@ const Resume = () => {
           {Data.map((val, id) => {
             if (val.category === "educação") {
               return (
-                // Para criação do carne atraves do array
                 <Card key={id} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
               )
             }
-          
           })}
         </div>
 

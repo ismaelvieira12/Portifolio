@@ -1,5 +1,14 @@
 const Data = [
     {
+        id: 1,
+        category: "educação",
+        icon: "icon-graduation",
+        year: '2022-2022',
+        title: "HTML5 e CSS3",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
+ 
+    },
+    {
         id: 2,
         category: "experiência",
         icon: "icon-graduation",
@@ -25,16 +34,7 @@ const Data = [
         title: "JavaScript - Avançado",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
         
-    },
-    {
-        id: 1,
-        category: "educação",
-        icon: "icon-graduation",
-        year: '2022-2022',
-        title: "HTML5 e CSS3",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat molestias voluptatem accusantium quidem hic, eaque impedit architecto reprehenderit repudiandae mollitia iure itaque officiis molestiae dicta perspiciatis ad nam commodi!",
- 
-    },
+    }
 ]
 
 export default Data
