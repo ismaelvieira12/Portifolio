@@ -1,3 +1,7 @@
+.section_title{
+    text-align: center;
+}
+
 .resume_container {
   margin-top: 3rem;
   display: grid;
