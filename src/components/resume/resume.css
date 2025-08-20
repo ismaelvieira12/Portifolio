@@ -23,7 +23,7 @@
   color: var(--Title-color);
   margin-bottom: 1.2rem;
   text-align: center;
-  border-bottom: 2px solid var(--Second-color);
+  border-bottom: 1px solid var(--Second-color);
   padding-bottom: 0.5rem;
 }
 
