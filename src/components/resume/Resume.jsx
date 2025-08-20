@@ -1,36 +1,46 @@
-import React from 'react';
+import React from "react";
 import "../resume/resume.css";
-import Data from './Data';
-import Card from './Card';
-
+import Data from "./Data";
+import Card from "./Card";
 
 const Resume = () => {
+  // Separando categorias para evitar repetição
+  const educacao = Data.filter((item) => item.category === "educação");
+  const experiencia = Data.filter((item) => item.category === "experiência");
+
   return (
     <section className="container section resume" id="resume">
       <h2 className="section_title">Experiência</h2>
+
       <div className="resume_container grid">
         <div className="timeline grid">
-          {Data.map((val, id) => {
-            if (val.category === "educação") {
-              return (
-                <Card key={id} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
-              )
-            }
-          })}
+          <h3 className="timeline_header">Formação Acadêmica</h3>
+          {educacao.map((item) => (
+            <Card
+              key={item.id}
+              icon={item.icon}
+              title={item.title}
+              year={item.year}
+              desc={item.desc}
+            />
+          ))}
         </div>
 
         <div className="timeline grid">
-          {Data.map((val, index) => {
-            if (val.category === "experiência") {
-              return (
-                <Card key={index} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
-              )
-            }
-          })}
+          <h3 className="timeline_header">Experiência Profissional</h3>
+          {experiencia.map((item) => (
+            <Card
+              key={item.id}
+              icon={item.icon}
+              title={item.title}
+              year={item.year}
+              desc={item.desc}
+            />
+          ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
