@@ -9,7 +9,7 @@ const Data = [
  
     },
     {
-        id: 2,
+        id: 3,
         category: "experiência",
         icon: "icon-graduation",
         year: '2022-2023',
@@ -18,7 +18,7 @@ const Data = [
     
     },
     {
-        id: 3,
+        id: 2,
         category: "educação",
         icon: "icon-graduation",
         year: '2023-2024',
