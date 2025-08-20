@@ -2,7 +2,6 @@
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-  /* gap: 1.875rem; */
   background-color: var(--container-color);
   border-radius: var(--border-radius);
   padding: 1.875rem;
@@ -24,7 +23,7 @@
 .timeline_item {
   position: relative;
   padding-left: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-bottom: 2.125rem;
 }
 
 .timeline_item:last-child {
@@ -46,7 +45,7 @@
   color: var(--Second-color);
   font-size: var(--h2-font-size);
   background-color: var(--container-color);
-  left: 0.5rem;
+  left: 0.1rem;
   top: 0;
   padding: 0.4rem;
   border-radius: 50%;
@@ -67,12 +66,5 @@
 @media (max-width: 768px) {
   .resume_container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 0.5rem;
-  }
-
-  .timeline {
-    margin: 1rem 0;
-    padding: 1rem;
   }
 }
