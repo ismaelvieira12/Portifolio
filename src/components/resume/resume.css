@@ -60,6 +60,7 @@
   color: var(--Title-color);
   font-size: var(--small-font-size);
   font-weight: 600;
+  font-size: 18px;
 }
 
 
