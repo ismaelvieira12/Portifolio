@@ -17,21 +17,19 @@ const Resume = () => {
             title={item.title}
             year={item.year}
             desc={item.desc}
-          />
-        ))}
+            />
+          ))}
+          {experiencia.map( item => (
+            <Card
+              key={item.id}
+              icon={item.icon}
+              title={item.title}
+              year={item.year}
+              desc={item.desc}
+            />
+          ))}
       </div>
 
-      <div className="resume_container">
-        {experiencia.map( item => (
-          <Card
-            key={item.id}
-            icon={item.icon}
-            title={item.title}
-            year={item.year}
-            desc={item.desc}
-          />
-        ))}
-      </div>
     </section>
   );
 };
