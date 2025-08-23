@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <section className="container section resume" id="resume">
       <h2 className="section_title">Formação Acadêmica</h2>
-      <div className="resume_container grid">
+      <div className="resume_container">
         {educacao.map( item => (
           <Card
             key={item.id}
@@ -21,7 +21,7 @@ const Resume = () => {
         ))}
       </div>
 
-      <div className="resume_container grid">
+      <div className="resume_container">
         {experiencia.map( item => (
           <Card
             key={item.id}

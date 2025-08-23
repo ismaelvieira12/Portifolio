@@ -10,7 +10,7 @@ const Data = [
     },
     {
         id: 3,
-        category: "experiência",
+        category: "educação",
         icon: "icon-graduation",
         year: '2022-2023',
         title: "JavaScript - Basico",
@@ -19,7 +19,7 @@ const Data = [
     },
     {
         id: 2,
-        category: "educação",
+        category: "experiência",
         icon: "icon-graduation",
         year: '2023-2024',
         title: "JavaScript - Intermediário",
