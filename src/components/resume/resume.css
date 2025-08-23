@@ -6,6 +6,7 @@
   margin-top: 3rem;
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr)); */
+  display: flex;
   background-color: var(--container-color);
   border-radius: var(--border-radius);
   padding: 1.875rem;
