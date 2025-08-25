@@ -165,6 +165,9 @@
     animation-delay: 0.4s;
   }
 
+  .description{
+    position: absolute;
+  }
   /* Descrição com delay maior */
   .swiper-slide-active .cards .descrition {
     animation: fadeInUp 4s ease forwards;
