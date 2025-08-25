@@ -167,6 +167,9 @@
 
   .description{
     position: absolute;
+    color: #ffffff;
+    top: 0;
+    z-index: 2;
   }
   /* Descrição com delay maior */
   .swiper-slide-active .cards .descrition {
