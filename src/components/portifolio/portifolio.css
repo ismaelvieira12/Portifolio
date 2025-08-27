@@ -156,7 +156,7 @@
   }
 
   .slider-item:hover{
-    scale: none;
+    /* scale: none; */
   }
   /* Título com delay */
   .swiper-slide-active .cards .title {
