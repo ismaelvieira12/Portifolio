@@ -139,6 +139,10 @@
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
     transition: all 0.5s ease;
+
+    &:hover{
+      display: none;
+    }
   }
   
   .swiper-slide-active .cards .slider-item-container::before {
