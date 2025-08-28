@@ -96,7 +96,7 @@
 /* Adicionando o style para mobile */
 
 @media (max-width: 768px) {
-  /* .carrosel {
+  .carrosel {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 10px;
   }
@@ -158,8 +158,6 @@
     animation: fadeInUp 3s ease forwards;
     animation-delay: 0.5s;
   }
-
-  */
   .slider-item:hover{
     scale: none;
   }
@@ -171,6 +169,12 @@
   .cards{
     margin: auto !important;
     width: 90%;
+
+    &:hover{
+      & .title{
+        display: none;
+      }
+    }
   }
   .description{
     display: none;
